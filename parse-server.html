@@ -1,0 +1,975 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <title>
+      Parse Open Source Community
+    </title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/pygment_trac.css"/>
+    <meta name="viewport" content="width=device-width"/>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73728444-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+    <div class="top-navi">
+      <div class="wrapper">
+        <ul class="navi">
+          <li>
+            <a href="./index.html">
+              Useful Resources
+            </a>
+          </li>
+          <li>
+            <a href="./parse-server.html" class="current">
+              Parse Server
+            </a>
+          </li>
+          <li>
+            <a href="./parse-dashboard.html">
+              Parse Dashboard
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header>
+        <a href="./index.html" class="logo">
+          <img src="img/parseopensource-logo.png" alt="Parse Open Source Community" width="100" />
+        </a>
+        <ul>
+          <li>
+            <a href="https://github.com/ParsePlatform/parse-server/wiki" target="_blank">
+              Parse Server Wiki
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ParsePlatform/parse-server/wiki/Parse-Server-Guide" target="_blank">
+              Parse Server Guide
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ParsePlatform/parse-server/wiki/Migrating-an-Existing-Parse-App" target="_blank">
+              Migration Guide
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ParsePlatform/parse-server/wiki#community-links" target="_blank">
+              Community links
+            </a>
+          </li>
+        </ul>
+      </header>
+      <section>
+        <p class="project-info">
+          <a href="https://github.com/ParsePlatform/parse-server">
+            View the Parse Server Project on GitHub
+            <small>
+              ParsePlatform/parse-server
+            </small>
+          </a>
+        </p>
+        <ul class="download-ul">
+          <li>
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.2.zip">
+              Download
+              <strong>
+                ZIP File
+              </strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.2.tar.gz">
+              Download
+              <strong>
+                TAR Ball
+              </strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ParsePlatform/parse-server">
+              Fork On
+              <strong>
+                GitHub
+              </strong>
+            </a>
+          </li>
+        </ul>
+        <div class="hr">
+        </div>
+        <h2>
+          Parse Server Changelog
+        </h2>
+        <h3>
+          2.2.2 (3/23/2016)
+        </h3>
+        <ul>
+          <li>
+            Important Fix: Mounts createLiveQueryServer, fix babel induced problem
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1153">
+              #1153
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Move ParseServer to it’s own file
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1166">
+              #1166
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Update
+            <a href="http://README.md">
+              README.md
+            </a>
+            - remove deploy buttons - replace with community links
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1139">
+              #1139
+            </a>
+            (drew-gross)
+          </li>
+          <li>
+            Adds
+            <a href="http://bootstrap.sh">
+              bootstrap.sh
+            </a>
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1138">
+              #1138
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Do not override username
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1142">
+              #1142
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Add pushId back to GCM payload
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1168">
+              #1168
+            </a>
+            (wangmengyan95)
+          </li>
+        </ul>
+        <h3>
+          2.2.1 (3/22/2016)
+        </h3>
+        <ul>
+          <li>
+            New: Add FileSystemAdapter file adapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1098">
+              #1098
+            </a>
+            (dtsolis)
+          </li>
+          <li>
+            New: Enabled CLP editing
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1128">
+              #1128
+            </a>
+            (drew-gross)
+          </li>
+          <li>
+            Improvement: Reduces the number of connections to mongo created
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1111">
+              #1111
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Improvement: Make ParseServer a class
+            <a href="https://github.com/ParsePlatform/parse-server/pull/980">
+              #980
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Adds support for plain object in $add, $addUnique, $remove
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1114">
+              #1114
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Generates default CLP, freezes objects
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1132">
+              #1132
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Properly sets installationId on creating session with 3rd party auth
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1110">
+              #1110
+            </a>
+            (flovilmart)
+          </li>
+        </ul>
+        <h3>
+          2.2.0 (3/18/2016)
+        </h3>
+        <ul>
+          <li>
+            New Feature: Real-time functionality with Live Queries!
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1092">
+              #1092
+            </a>
+            (wangmengyan95)
+          </li>
+          <li>
+            Improvement: Push Status API
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1004">
+              #1004
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Improvement: Allow client operations on Roles
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1068">
+              #1068
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Improvement: Add URI encoding to mongo auth parameters
+            <a href="https://github.com/ParsePlatform/parse-server/pull/986">
+              #986
+            </a>
+            (bgw)
+          </li>
+          <li>
+            Improvement: Adds support for apps key in config file, but only support single app for now
+            <a href="https://github.com/ParsePlatform/parse-server/pull/979">
+              #979
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Documentation: Getting Started and Configuring Parse Server
+            <a href="https://github.com/ParsePlatform/parse-server/pull/988">
+              #988
+            </a>
+            (hramos)
+          </li>
+          <li>
+            Fix: Various edge cases with REST API
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1066">
+              #1066
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Makes sure the location in results has the proper objectId
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1065">
+              #1065
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Third-party auth is properly removed when unlinked
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1081">
+              #1081
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Clear the session-user cache when changing _User objects
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1072">
+              #1072
+            </a>
+            (gfosco)
+          </li>
+          <li>
+            Fix: Bug related to subqueries on unfetched objects
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1046">
+              #1046
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Properly urlencode parameters for email validation and password reset
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1001">
+              #1001
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Better sanitization/decoding of object data for afterSave triggers
+            <a href="https://github.com/ParsePlatform/parse-server/pull/992">
+              #992
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Changes default encoding for httpRequest
+            <a href="https://github.com/ParsePlatform/parse-server/pull/892">
+              #892
+            </a>
+            (flovilmart)
+          </li>
+        </ul>
+        <h3>
+          2.1.6 (3/11/2016)
+        </h3>
+        <ul>
+          <li>
+            Improvement: Full query support for badge Increment (#931)
+            <a href="https://github.com/ParsePlatform/parse-server/pull/983">
+              #983
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Improvement: Shutdown standalone parse server gracefully
+            <a href="https://github.com/ParsePlatform/parse-server/pull/958">
+              #958
+            </a>
+            (raulr)
+          </li>
+          <li>
+            Improvement: Add database options to ParseServer constructor and pass to MongoStorageAdapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/956">
+              #956
+            </a>
+            (steven-supersolid)
+          </li>
+          <li>
+            Improvement: AuthData logic refactor
+            <a href="https://github.com/ParsePlatform/parse-server/pull/952">
+              #952
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Improvement: Changed FileLoggerAdapterSpec to fail gracefully on Windows
+            <a href="https://github.com/ParsePlatform/parse-server/pull/946">
+              #946
+            </a>
+            (aneeshd16)
+          </li>
+          <li>
+            Improvement: Add new schema collection type and replace all usages of direct mongo collection for schema operations.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/943">
+              #943
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Improvement: Adds CLP API to Schema router
+            <a href="https://github.com/ParsePlatform/parse-server/pull/898">
+              #898
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Cleans up authData null keys on login for android crash
+            <a href="https://github.com/ParsePlatform/parse-server/pull/978">
+              #978
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Do master query for before/afterSaveHook
+            <a href="https://github.com/ParsePlatform/parse-server/pull/959">
+              #959
+            </a>
+            (wangmengyan95)
+          </li>
+          <li>
+            Fix: re-add shebang
+            <a href="https://github.com/ParsePlatform/parse-server/pull/944">
+              #944
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Added test command for Windows support
+            <a href="https://github.com/ParsePlatform/parse-server/pull/886">
+              #886
+            </a>
+            (aneeshd16)
+          </li>
+        </ul>
+        <h3>
+          2.1.5 (3/9/2016)
+        </h3>
+        <ul>
+          <li>
+            New: FileAdapter for Google Cloud Storage
+            <a href="https://github.com/ParsePlatform/parse-server/pull/708">
+              #708
+            </a>
+            (mcdonamp)
+          </li>
+          <li>
+            Improvement: Minimize extra schema queries in some scenarios.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/919">
+              #919
+            </a>
+            (Marco129)
+          </li>
+          <li>
+            Improvement: Move DatabaseController and Schema fully to adaptive mongo collection.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/909">
+              #909
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Improvement: Cleanup PushController/PushRouter, remove raw mongo collection access.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/903">
+              #903
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Improvement: Increment badge the right way
+            <a href="https://github.com/ParsePlatform/parse-server/pull/902">
+              #902
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Improvement: Migrate ParseGlobalConfig to new database storage API.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/901">
+              #901
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Improvement: Improve delete flow for non-existent _Join collection
+            <a href="https://github.com/ParsePlatform/parse-server/pull/881">
+              #881
+            </a>
+            (Marco129)
+          </li>
+          <li>
+            Improvement: Adding a role scenario test for issue 827
+            <a href="https://github.com/ParsePlatform/parse-server/pull/878">
+              #878
+            </a>
+            (gfosco)
+          </li>
+          <li>
+            Improvement: Test empty authData block on login for #413
+            <a href="https://github.com/ParsePlatform/parse-server/pull/863">
+              #863
+            </a>
+            (gfosco)
+          </li>
+          <li>
+            Improvement: Modified the npm dev script to support Windows
+            <a href="https://github.com/ParsePlatform/parse-server/pull/846">
+              #846
+            </a>
+            (aneeshd16)
+          </li>
+          <li>
+            Improvement: Move HooksController to use MongoCollection instead of direct Mongo access.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/844">
+              #844
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Improvement: Adds public_html and views for packaging
+            <a href="https://github.com/ParsePlatform/parse-server/pull/839">
+              #839
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Improvement: Better support for windows builds
+            <a href="https://github.com/ParsePlatform/parse-server/pull/831">
+              #831
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Improvement: Convert Schema.js to ES6 class.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/826">
+              #826
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Improvement: Remove duplicated instructions
+            <a href="https://github.com/ParsePlatform/parse-server/pull/816">
+              #816
+            </a>
+            (hramos)
+          </li>
+          <li>
+            Improvement: Completely migrate SchemasRouter to new MongoCollection API.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/794">
+              #794
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Fix: Do not require where clause in $dontSelect condition on queries.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/925">
+              #925
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Fix: Make sure that ACLs propagate to before/after save hooks.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/924">
+              #924
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Fix: Support params option in Parse.Cloud.httpRequest.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/912">
+              #912
+            </a>
+            (carmenlau)
+          </li>
+          <li>
+            Fix: Fix flaky Parse.GeoPoint test.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/908">
+              #908
+            </a>
+            (nlutsenko)
+          </li>
+          <li>
+            Fix: Handle legacy _client_permissions key in _SCHEMA.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/900">
+              #900
+            </a>
+            (drew-gross)
+          </li>
+          <li>
+            Fix: Fixes bug when querying equalTo on objectId and relation
+            <a href="https://github.com/ParsePlatform/parse-server/pull/887">
+              #887
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Allow crossdomain on filesRouter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/876">
+              #876
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Remove limit when counting results.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/867">
+              #867
+            </a>
+            (gfosco)
+          </li>
+          <li>
+            Fix: beforeSave changes should propagate to the response
+            <a href="https://github.com/ParsePlatform/parse-server/pull/865">
+              #865
+            </a>
+            (gfosco)
+          </li>
+          <li>
+            Fix: Delete relation field when _Join collection not exist
+            <a href="https://github.com/ParsePlatform/parse-server/pull/864">
+              #864
+            </a>
+            (Marco129)
+          </li>
+          <li>
+            Fix: Related query on non-existing column
+            <a href="https://github.com/ParsePlatform/parse-server/pull/861">
+              #861
+            </a>
+            (gfosco)
+          </li>
+          <li>
+            Fix: Update markdown in .github/ISSUE_TEMPLATE.md
+            <a href="https://github.com/ParsePlatform/parse-server/pull/859">
+              #859
+            </a>
+            (igorshubovych)
+          </li>
+          <li>
+            Fix: Issue with creating wrong _Session for Facebook login
+            <a href="https://github.com/ParsePlatform/parse-server/pull/857">
+              #857
+            </a>
+            (tobernguyen)
+          </li>
+          <li>
+            Fix: Leak warnings in tests, use mongodb-runner from node_modules
+            <a href="https://github.com/ParsePlatform/parse-server/pull/843">
+              #843
+            </a>
+            (drew-gross)
+          </li>
+          <li>
+            Fix: Reversed roles lookup
+            <a href="https://github.com/ParsePlatform/parse-server/pull/841">
+              #841
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Improves loading of Push Adapter, fix loading of S3Adapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/833">
+              #833
+            </a>
+            (flovilmart)
+          </li>
+          <li>
+            Fix: Add field to system schema
+            <a href="https://github.com/ParsePlatform/parse-server/pull/828">
+              #828
+            </a>
+            (Marco129)
+          </li>
+        </ul>
+        <h3>
+          2.1.4 (3/3/2016)
+        </h3>
+        <ul>
+          <li>
+            New: serverInfo endpoint that returns server version and info about the server’s features
+          </li>
+          <li>
+            Improvement: Add support for badges on iOS
+          </li>
+          <li>
+            Improvement: Improve failure handling in cloud code http requests
+          </li>
+          <li>
+            Improvement: Add support for queries on pointers and relations
+          </li>
+          <li>
+            Improvement: Add support for multiple $in clauses in a query
+          </li>
+          <li>
+            Improvement: Add allowClientClassCreation config option
+          </li>
+          <li>
+            Improvement: Allow atomically setting subdocument keys
+          </li>
+          <li>
+            Improvement: Allow arbitrarily deeply nested roles
+          </li>
+          <li>
+            Improvement: Set proper content-type in S3 File Adapter
+          </li>
+          <li>
+            Improvement: S3 adapter auto-creates buckets
+          </li>
+          <li>
+            Improvement: Better error messages for many errors
+          </li>
+          <li>
+            Performance: Improved algorithm for validating client keys
+          </li>
+          <li>
+            Experimental: Parse Hooks and Hooks API
+          </li>
+          <li>
+            Experimental: Email verification and password reset emails
+          </li>
+          <li>
+            Experimental: Improve compatability of logs feature with
+            <a href="http://Parse.com">
+              Parse.com
+            </a>
+          </li>
+          <li>
+            Fix: Fix for attempting to delete missing classes via schemas API
+          </li>
+          <li>
+            Fix: Allow creation of system classes via schemas API
+          </li>
+          <li>
+            Fix: Allow missing where cause in $select
+          </li>
+          <li>
+            Fix: Improve handling of invalid object ids
+          </li>
+          <li>
+            Fix: Replace query overwriting existing query
+          </li>
+          <li>
+            Fix: Propagate installationId in cloud code triggers
+          </li>
+          <li>
+            Fix: Session expiresAt is now a Date instead of a string
+          </li>
+          <li>
+            Fix: Fix count queries
+          </li>
+          <li>
+            Fix: Disallow _Role objects without names or without ACL
+          </li>
+          <li>
+            Fix: Better handling of invalid types submitted
+          </li>
+          <li>
+            Fix: beforeSave will not be triggered for attempts to save with invalid authData
+          </li>
+          <li>
+            Fix: Fix duplicate device token issues on Android
+          </li>
+          <li>
+            Fix: Allow empty authData on signup
+          </li>
+          <li>
+            Fix: Allow Master Key Headers (CORS)
+          </li>
+          <li>
+            Fix: Fix bugs if JavaScript key was not provided in server configuration
+          </li>
+          <li>
+            Fix: Parse Files on objects can now be stored without URLs
+          </li>
+          <li>
+            Fix: allow both objectId or installationId when modifying installation
+          </li>
+          <li>
+            Fix: Command line works better when not given options
+          </li>
+        </ul>
+        <h3>
+          2.1.3 (2/24/2016)
+        </h3>
+        <ul>
+          <li>
+            Feature: Add initial support for in-app purchases
+          </li>
+          <li>
+            Feature: Better error messages when attempting to run the server on a port that is already in use or without a server URL
+          </li>
+          <li>
+            Feature: Allow customization of max file size
+          </li>
+          <li>
+            Performance: Faster saves if not using beforeSave triggers
+          </li>
+          <li>
+            Fix: Send session token in response to current user endpoint
+          </li>
+          <li>
+            Fix: Remove triggers for _Session collection
+          </li>
+          <li>
+            Fix: Improve compatability of cloud code beforeSave hook for newly created object
+          </li>
+          <li>
+            Fix: ACL creation for master key only objects
+          </li>
+          <li>
+            Fix: Allow uploading files without Content-Type
+          </li>
+          <li>
+            Fix: Add features to http requrest to match
+            <a href="http://Parse.com">
+              Parse.com
+            </a>
+          </li>
+          <li>
+            Fix: Bugs in development script when running from locations other than project root
+          </li>
+          <li>
+            Fix: Can pass query constraints in URL
+          </li>
+          <li>
+            Fix: Objects with legacy “_tombstone” key now don’t cause issues.
+          </li>
+          <li>
+            Fix: Allow nested keys in objects to begin with underscores
+          </li>
+          <li>
+            Fix: Allow correct headers for CORS
+          </li>
+        </ul>
+        <h3>
+          2.1.2 (2/19/2016)
+        </h3>
+        <ul>
+          <li>
+            Change: The S3 file adapter constructor requires a bucket name
+          </li>
+          <li>
+            Fix: Parse Query should throw if improperly encoded
+          </li>
+          <li>
+            Fix: Issue where roles were not used in some requests
+          </li>
+          <li>
+            Fix: serverURL will no longer default to
+            <a href="http://api.parse.com/1">
+              api.parse.com/1
+            </a>
+          </li>
+        </ul>
+        <h3>
+          2.1.1 (2/18/2016)
+        </h3>
+        <ul>
+          <li>
+            Experimental: Schemas API support for DELETE operations
+          </li>
+          <li>
+            Fix: Session token issue fetching Users
+          </li>
+          <li>
+            Fix: Facebook auth validation
+          </li>
+          <li>
+            Fix: Invalid error when deleting missing session
+          </li>
+        </ul>
+        <h3>
+          2.1.0 (2/17/2016)
+        </h3>
+        <ul>
+          <li>
+            Feature: Support for additional OAuth providers
+          </li>
+          <li>
+            Feature: Ability to implement custom OAuth providers
+          </li>
+          <li>
+            Feature: Support for deleting Parse Files
+          </li>
+          <li>
+            Feature: Allow querying roles
+          </li>
+          <li>
+            Feature: Support for logs, extensible via Log Adapter
+          </li>
+          <li>
+            Feature: New Push Adapter for sending push notifications through OneSignal
+          </li>
+          <li>
+            Feature: Tighter default security for Users
+          </li>
+          <li>
+            Feature: Pass parameters to cloud code in query string
+          </li>
+          <li>
+            Feature: Disable anonymous users via configuration.
+          </li>
+          <li>
+            Experimental: Schemas API support for PUT operations
+          </li>
+          <li>
+            Fix: Prevent installation ID from being added to User
+          </li>
+          <li>
+            Fix: Becoming a user works properly with sessions
+          </li>
+          <li>
+            Fix: Including multiple object when some object are unavailable will get all the objects that are available
+          </li>
+          <li>
+            Fix: Invalid URL for Parse Files
+          </li>
+          <li>
+            Fix: Making a query without a limit now returns 100 results
+          </li>
+          <li>
+            Fix: Expose installation id in cloud code
+          </li>
+          <li>
+            Fix: Correct username for Anonymous users
+          </li>
+          <li>
+            Fix: Session token issue after fetching user
+          </li>
+          <li>
+            Fix: Issues during install process
+          </li>
+          <li>
+            Fix: Issue with Unity SDK sending _noBody
+          </li>
+        </ul>
+        <h3>
+          2.0.8 (2/11/2016)
+        </h3>
+        <ul>
+          <li>
+            Add: support for Android and iOS push notifications
+          </li>
+          <li>
+            Experimental: cloud code validation hooks (can mark as non-experimental after we have docs)
+          </li>
+          <li>
+            Experimental: support for schemas API (GET and POST only)
+          </li>
+          <li>
+            Experimental: support for Parse Config (GET and POST only)
+          </li>
+          <li>
+            Fix: Querying objects with equality constraint on array column
+          </li>
+          <li>
+            Fix: User logout will remove session token
+          </li>
+          <li>
+            Fix: Various files related bugs
+          </li>
+          <li>
+            Fix: Force minimum node version 4.3 due to security issues in earlier version
+          </li>
+          <li>
+            Performance Improvement: Improved caching
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <br />
+        <h4>Join the Community on Slack.</h4>
+        <a href="http://parse-opensource.sapp.io" title="Parse Open Source Community on Slack">
+          <img src="http://parse-opensource.sapp.io/img/parseopensource.svg" alt="Parse Open Source Community on Slack" />
+        </a>
+        <p class="footer-links">
+          <small>
+            Follow us on Twitter
+            <a href="http://bit.ly/1Uy4YCt">@parseopensource</a>
+          </small>
+          <br />
+          <br />
+          <small>
+            This website is maintained by
+            <br />
+            <a href="http://github.com/parseopensource">
+              Parse Open Source Community
+            </a>
+          </small>
+          <br />
+          <br />
+          <small>
+            Hosted on GitHub Pages
+            <br />
+            Theme by
+            <a href="https://github.com/orderedlist">
+              orderedlist
+            </a>
+          </small>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
