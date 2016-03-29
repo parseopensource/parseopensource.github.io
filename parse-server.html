@@ -18,10 +18,8 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-73728444-3', 'auto');
       ga('send', 'pageview');
-
     </script>
   </head>
   <body>
@@ -119,6 +117,184 @@
         <h2>
           Parse Server Changelog
         </h2>
+        <h3>
+          2.2.4 (3/29/2016)
+        </h3>
+        <ul>
+          <li>
+            Hotfix: fixed imports issue for S3Adapter, GCSAdapter, FileSystemAdapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1263">
+              #1263
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Fix: Clean null authData values on _User update
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1199">
+              #1199
+            </a>
+            (
+            <a href="https://github.com/yuzeh">
+              yuzeh
+            </a>
+            )
+          </li>
+        </ul>
+        <h3>
+          2.2.3 (3/29/2016)
+        </h3>
+        <ul>
+          <li>
+            Fixed bug with invalid email verification link on email update.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1253">
+              #1253
+            </a>
+            (
+            <a href="https://github.com/kzielonka">
+              kzielonka
+            </a>
+            )
+          </li>
+          <li>
+            Badge update supports increment as well as Increment
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1248">
+              #1248
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Config/Push Tested with the dashboard.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1235">
+              #1235
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Better logging with winston
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1234">
+              #1234
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Make GlobalConfig work like
+            <a href="http://parse.com">
+              parse.com
+            </a>
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1210">
+              #1210
+            </a>
+            (
+            <a href="https://github.com/framp">
+              framp
+            </a>
+            )
+          </li>
+          <li>
+            Improve flattening of results from pushAdapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1204">
+              #1204
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Push adapters are provided by external packages
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1195">
+              #1195
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Fix flaky test
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1188">
+              #1188
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Fixes problem affecting finding array pointers
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1185">
+              #1185
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Moves Files adapters to external packages
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1172">
+              #1172
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Mark push as enabled in serverInfo endpoint
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1164">
+              #1164
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Document email adapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1144">
+              #1144
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Reset password fix
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1133">
+              #1133
+            </a>
+            (
+            <a href="https://github.com/carmenlau">
+              carmenlau
+            </a>
+            )
+          </li>
+        </ul>
         <h3>
           2.2.2 (3/23/2016)
         </h3>
@@ -945,14 +1121,18 @@
       </section>
       <footer>
         <br />
-        <h4>Join the Community on Slack.</h4>
+        <h4>
+          Join the Community on Slack.
+        </h4>
         <a href="http://parse-opensource.sapp.io" title="Parse Open Source Community on Slack">
           <img src="http://parse-opensource.sapp.io/img/parseopensource.svg" alt="Parse Open Source Community on Slack" />
         </a>
         <p class="footer-links">
           <small>
             Follow us on Twitter
-            <a href="http://bit.ly/1Uy4YCt">@parseopensource</a>
+            <a href="http://bit.ly/1Uy4YCt">
+              @parseopensource
+            </a>
           </small>
           <br />
           <br />

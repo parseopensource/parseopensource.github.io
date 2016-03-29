@@ -191,6 +191,10 @@ header h3 {
   width: 376px;
 }
 
+.download-ul.dashboard {
+  width: 270px;
+}
+
 .download-ul li {
   width: 89px;
   float: left;
