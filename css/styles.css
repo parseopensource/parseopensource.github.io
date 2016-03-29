@@ -188,7 +188,7 @@ header h3 {
   background: #f4f4f4;
   border-radius: 5px;
   border: 1px solid #e0e0e0;
-  width: 270px;
+  width: 376px;
 }
 
 .download-ul li {
@@ -204,6 +204,14 @@ header h3 {
 
 .download-ul li:last-child a {
   border-radius: 0 5px 5px 0;
+}
+
+.npm {
+  padding: 0 8px;
+}
+
+.download-ul li img {
+  margin-top: 4px;
 }
 
 .download-ul a {
@@ -229,7 +237,7 @@ strong {
   font-weight: 700;
 }
 
-.download-ul li + li + li {
+.download-ul li:last-child {
   border-right: none;
   width: 89px;
 }
