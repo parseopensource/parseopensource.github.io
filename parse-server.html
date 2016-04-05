@@ -118,6 +118,275 @@
           Parse Server Changelog
         </h2>
         <h3>
+          2.2.5 (4/4/2016)
+        </h3>
+        <ul>
+          <li>
+            Improves config loading and tests
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1363">
+              #1363
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Adds travis configuration to deploy NPM on new version tags
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1361">
+              #1361
+            </a>
+            (
+            <a href="https://github.com/gfosco">
+              gfosco
+            </a>
+            )
+          </li>
+          <li>
+            Inject the default schemas properties when loading it
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1357">
+              #1357
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Adds console transport when testing with VERBOSE=1
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1351">
+              #1351
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Make notEqual work on relations
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1350">
+              #1350
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Accept only bool for $exists in LiveQuery
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1315">
+              #1315
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Adds more options when using CLI/config
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1305">
+              #1305
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Update error message
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1297">
+              #1297
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Properly let masterKey add fields
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1291">
+              #1291
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Point to #1271 as how to write a good issue report
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1290">
+              #1290
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Adds ability to override mount with publicServerURL for production uses
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1287">
+              #1287
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Single object queries to use include and keys
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1280">
+              #1280
+            </a>
+            (
+            <a href="https://github.com/jeremyjackson89">
+              jeremyjackson89
+            </a>
+            )
+          </li>
+          <li>
+            Improves report for Push error in logs and _PushStatus
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1269">
+              #1269
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Removes all stdout/err logs while testing
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1268">
+              #1268
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Matching queries with doesNotExist constraint
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1250">
+              #1250
+            </a>
+            (
+            <a href="https://github.com/andrecardoso">
+              andrecardoso
+            </a>
+            )
+          </li>
+          <li>
+            Added session length option for session tokens to server configuration
+            <a href="https://github.com/ParsePlatform/parse-server/pull/997">
+              #997
+            </a>
+            (
+            <a href="https://github.com/Kenishi">
+              Kenishi
+            </a>
+            )
+          </li>
+          <li>
+            Regression test for #1259
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1286">
+              #1286
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Regression test for #871
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1283">
+              #1283
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Add a test to repro #701
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1281">
+              #1281
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Fix for #1334: using relative cloud code files broken
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1353">
+              #1353
+            </a>
+            (
+            <a href="https://github.com/airdrummingfool">
+              airdrummingfool
+            </a>
+            )
+          </li>
+          <li>
+            Fix Issue/1288
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1346">
+              #1346
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Fixes #1271
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1295">
+              #1295
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Fixes issue #1302
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1314">
+              #1314
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Fixes bug related to include in queries
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1312">
+              #1312
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+        </ul>
+        <h3>
           2.2.4 (3/29/2016)
         </h3>
         <ul>
