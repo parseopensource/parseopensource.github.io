@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE doctype html>
 <html>
   <head>
     <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
     <title>
       Parse Open Source Community
     </title>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/pygment_trac.css"/>
-    <meta name="viewport" content="width=device-width"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/pygment_trac.css" rel="stylesheet"/>
+    <meta content="width=device-width" name="viewport"/>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
       </script>
@@ -32,7 +32,7 @@
             </a>
           </li>
           <li>
-            <a href="./parse-server.html" class="current">
+            <a class="current" href="./parse-server.html">
               Parse Server
             </a>
           </li>
@@ -46,8 +46,8 @@
     </div>
     <div class="wrapper">
       <header>
-        <a href="./index.html" class="logo">
-          <img src="img/parseopensource-logo.png" alt="Parse Open Source Community" width="100" />
+        <a class="logo" href="./index.html">
+          <img alt="Parse Open Source Community" src="img/parseopensource-logo.png" width="100"/>
         </a>
         <ul>
           <li>
@@ -83,7 +83,7 @@
         </p>
         <ul class="download-ul">
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.6.zip">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.7.zip">
               Download
               <strong>
                 ZIP File
@@ -91,7 +91,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.6.tar.gz">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.7.tar.gz">
               Download
               <strong>
                 TAR Ball
@@ -108,7 +108,7 @@
           </li>
           <li class="npm">
             <a href="https://github.com/ParsePlatform/parse-server">
-              <img src="https://img.shields.io/npm/v/parse-server.svg?style=flat" alt="npm" />
+              <img alt="npm" src="https://img.shields.io/npm/v/parse-server.svg?style=flat"/>
             </a>
           </li>
         </ul>
@@ -117,6 +117,396 @@
         <h2>
           Parse Server Changelog
         </h2>
+        <h3>
+          2.2.7 (4/15/2016)
+        </h3>
+        <ul>
+          <li>
+            Adds support for --verbose and verbose option when running ParseServer
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1414">
+              #1414
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Adds limit = 0 as a valid parameter for queries
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1493">
+              #1493
+            </a>
+            (
+            <a href="https://github.com/seijiakiyama">
+              seijiakiyama
+            </a>
+            )
+          </li>
+          <li>
+            Makes sure we preserve Installations when updating a token  (#1475)
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1486">
+              #1486
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Hotfix for tests
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1503">
+              #1503
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Enable logs
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1502">
+              #1502
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Do some triple equals for great justice
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1499">
+              #1499
+            </a>
+            (
+            <a href="https://github.com/TylerBrock">
+              TylerBrock
+            </a>
+            )
+          </li>
+          <li>
+            Apply credential stripping to all untransforms for _User
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1498">
+              #1498
+            </a>
+            (
+            <a href="https://github.com/TylerBrock">
+              TylerBrock
+            </a>
+            )
+          </li>
+          <li>
+            Checking if object has defined key for Pointer constraints in liveQuery
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1487">
+              #1487
+            </a>
+            (
+            <a href="https://github.com/simonas-notcat">
+              simonas-notcat
+            </a>
+            )
+          </li>
+          <li>
+            Remove collection prefix and default mongo URI
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1479">
+              #1479
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Store collection prefix in mongo adapter, and clean up adapter interface
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1472">
+              #1472
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Move field deletion logic into mongo adapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1471">
+              #1471
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Adds support for Long and Double mongodb types (fixes #1316)
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1470">
+              #1470
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Schema.js database agnostic
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1468">
+              #1468
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Remove console.log
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1465">
+              #1465
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Push status nits
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1462">
+              #1462
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Fixes #1444
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1451">
+              #1451
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Removing sessionToken and authData from _User objects included in a query
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1450">
+              #1450
+            </a>
+            (
+            <a href="https://github.com/simonas-notcat">
+              simonas-notcat
+            </a>
+            )
+          </li>
+          <li>
+            Move mongo field type logic into mongoadapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1432">
+              #1432
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Prevents _User lock out when setting ACL on signup or afterwards
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1429">
+              #1429
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Update .travis.yml
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1428">
+              #1428
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Adds relation fields to objects
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1424">
+              #1424
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Update .travis.yml
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1423">
+              #1423
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Sets the defaultSchemas keys in the SchemaCollection
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1421">
+              #1421
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Fixes #1417
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1420">
+              #1420
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Untransform should treat Array’s as nested objects
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1416">
+              #1416
+            </a>
+            (
+            <a href="https://github.com/blacha">
+              blacha
+            </a>
+            )
+          </li>
+          <li>
+            Adds X-Parse-Push-Status-Id header
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1412">
+              #1412
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Schema format cleanup
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1407">
+              #1407
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            Updates the publicServerURL option
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1397">
+              #1397
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Fix exception with non-expiring session tokens.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1386">
+              #1386
+            </a>
+            (
+            <a href="https://github.com/0x18B2EE">
+              0x18B2EE
+            </a>
+            )
+          </li>
+          <li>
+            Move mongo schema format related logic into mongo adapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1385">
+              #1385
+            </a>
+            (
+            <a href="https://github.com/drew-gross">
+              drew-gross
+            </a>
+            )
+          </li>
+          <li>
+            WIP: Huge performance improvement on roles queries
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1383">
+              #1383
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Removes GCS Adapter from provided adapters
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1339">
+              #1339
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            DBController refactoring
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1228">
+              #1228
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Spotify authentication
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1226">
+              #1226
+            </a>
+            (
+            <a href="https://github.com/1nput0utput">
+              1nput0utput
+            </a>
+            )
+          </li>
+          <li>
+            Expose DatabaseAdapter to simplify application tests
+            <a href="https://github.com/ParsePlatform/parse-server/pull/1121">
+              #1121
+            </a>
+            (
+            <a href="https://github.com/steven-supersolid">
+              steven-supersolid
+            </a>
+            )
+          </li>
+        </ul>
         <h3>
           2.2.6 (4/5/2016)
         </h3>
@@ -1438,12 +1828,12 @@
         </ul>
       </section>
       <footer>
-        <br />
+        <br/>
         <h4>
           Join the Community on Slack.
         </h4>
         <a href="http://parse-opensource.sapp.io" title="Parse Open Source Community on Slack">
-          <img src="http://parse-opensource.sapp.io/img/parseopensource.svg" alt="Parse Open Source Community on Slack" />
+          <img alt="Parse Open Source Community on Slack" src="http://parse-opensource.sapp.io/img/parseopensource.svg"/>
         </a>
         <p class="footer-links">
           <small>
@@ -1452,20 +1842,20 @@
               @parseopensource
             </a>
           </small>
-          <br />
-          <br />
+          <br/>
+          <br/>
           <small>
             This website is maintained by
-            <br />
+            <br/>
             <a href="http://github.com/parseopensource">
               Parse Open Source Community
             </a>
           </small>
-          <br />
-          <br />
+          <br/>
+          <br/>
           <small>
             Hosted on GitHub Pages
-            <br />
+            <br/>
             Theme by
             <a href="https://github.com/orderedlist">
               orderedlist
