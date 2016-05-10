@@ -83,7 +83,7 @@
         </p>
         <ul class="download-ul">
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.7.zip">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.8.zip">
               Download
               <strong>
                 ZIP File
@@ -91,7 +91,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.7.tar.gz">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.8.tar.gz">
               Download
               <strong>
                 TAR Ball
@@ -117,6 +117,48 @@
         <h2>
           Parse Server Changelog
         </h2>
+        <h3>2.2.8 (5/8/2016)</h3>
+        <ul>
+          <li>
+            New: Support for Pointer Permissions
+          </li>
+          <li>
+            New: Expose logger in Cloud Code
+          </li>
+          <li>
+            New: Option to revoke sessions on password reset
+          </li>
+          <li>
+            New: Option to expire inactive sessions
+          </li>
+          <li>
+            Perf: Improvements in ACL checking query
+          </li>
+          <li>
+            Fix: Issues when sending pushes to list of devices that contains invalid values
+          </li>
+          <li>
+            Fix: Issues caused by using babel-polyfill outside of Parse Server, but in the same express app
+          </li>
+          <li>
+            Fix: Remove creation of extra session tokens
+          </li>
+          <li>
+            Fix: Return authData when querying with master key
+          </li>
+          <li>
+            Fix: Bugs when deleting webhooks
+          </li>
+          <li>
+            Fix: Ignore _RevocableSession header, which might be sent by the JS SDK
+          </li>
+          <li>
+            Fix: Issues with querying via URL params
+          </li>
+          <li>
+            Fix: Properly encode "Date" parameters to cloud code functions
+          </li>
+        </ul>
         <h3>
           2.2.7 (4/15/2016)
         </h3>
