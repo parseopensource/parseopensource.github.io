@@ -83,7 +83,7 @@
         </p>
         <ul class="download-ul">
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.9.zip">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.10.zip">
               Download
               <strong>
                 ZIP File
@@ -91,7 +91,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.9.tar.gz">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.10.tar.gz">
               Download
               <strong>
                 TAR Ball
@@ -117,6 +117,44 @@
         <h2>
           Parse Server Changelog
         </h2>
+        <h3>
+          2.2.10 (5/15/2016)
+        </h3>
+        <ul>
+          <li>
+            Fix: Write legacy ACLs to Mongo so that clients that still go through
+            <a href="http://Parse.com">Parse.com</a>
+            can read them, thanks to
+            <a href="https://github.com/TylerBrock">
+              Tyler Brock
+            </a>
+            and
+            <a href="https://github.com/carmenlau">
+              carmenlau
+            </a>
+          </li>
+          <li>
+            Fix: Querying installations with limit = 0 and count = 1 now works, thanks to
+            <a href="https://github.com/ssk7833">
+              ssk7833
+            </a>
+          </li>
+          <li>
+            Fix: Return correct error when violating unique index, thanks to
+            <a href="https://github.com/Marco129">
+              Marco Cheung
+            </a>
+          </li>
+          <li>
+            Fix: Allow unsetting user’s email, thanks to
+            <a href="https://github.com/Marco129">
+              Marco Cheung
+            </a>
+          </li>
+          <li>
+            New: Support for Node 6.1
+          </li>
+        </ul>
         <h3>
           2.2.9 (5/9/2016)
         </h3>
