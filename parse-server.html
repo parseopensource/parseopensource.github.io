@@ -90,7 +90,7 @@
         </p>
         <ul class="download-ul">
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.16.zip">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.18.zip">
               Download
               <strong>
                 ZIP File
@@ -98,7 +98,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.16.tar.gz">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.18.tar.gz">
               Download
               <strong>
                 TAR Ball
@@ -124,6 +124,422 @@
         <h2>
           Parse Server Changelog
         </h2>
+        <h3>2.2.18</h3>
+        <ul>
+          <li>
+            Fix: Improve support for objects in push alert, thanks to
+            <a href="https://github.com/alenoir">
+              Antoine Lenoir
+            </a>
+          </li>
+          <li>
+            Fix; Prevent pointed from getting clobbered when they are changed in a beforeSave, thanks to
+            <a href="https://github.com/sud80">
+              sud
+            </a>
+          </li>
+          <li>
+            Fix: Improve support for “Bytes” type, thanks to
+            <a href="https://github.com/conghoang">
+              CongHoang
+            </a>
+          </li>
+          <li>
+            Fix: Better logging compatability with
+            <a href="http://Parse.com">
+              Parse.com
+            </a>
+            , thanks to
+            <a href="https://github.com/acinader">
+              Arthur Cinader
+            </a>
+          </li>
+          <li>
+            New: Add Janrain Capture and Janrain Engage auth provider, thanks to
+            <a href="https://github.com/AndrewLane">
+              Andrew Lane
+            </a>
+          </li>
+          <li>
+            Improved: Include content length header in files response, thanks to
+            <a href="https://github.com/vbsteven">
+              Steven Van Bael
+            </a>
+          </li>
+          <li>
+            Improved: Support byte range header for files, thanks to
+            <a href="https://github.com/Bragegs">
+              Brage G. Staven
+            </a>
+          </li>
+          <li>
+            Improved: Validations for LinkedIn access_tokens, thanks to
+            <a href="https://github.com/felix-dumit">
+              Felix Dumit
+            </a>
+          </li>
+          <li>
+            Improved: Experimental postgres support, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Perf: Use native bcrypt implementation if available, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+        </ul>
+        <h3>2.2.17 (07/23/2016)</h3>
+        <p>
+          <a href="https://github.com/ParsePlatform/parse-server/compare/2.2.16...2.2.17">
+            Full Changelog
+          </a>
+        </p>
+        <ul>
+          <li>
+            Cloud code logs
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2370">
+              #2370
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Make sure _PushStatus operations are run in order
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2367">
+              #2367
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Typo fix for error message when can’t ensure uniqueness of user email addresses
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2360">
+              #2360
+            </a>
+            (
+            <a href="https://github.com/AndrewLane">
+              AndrewLane
+            </a>
+            )
+          </li>
+          <li>
+            LiveQuery constrains matching fix
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2357">
+              #2357
+            </a>
+            (
+            <a href="https://github.com/simonas-notcat">
+              simonas-notcat
+            </a>
+            )
+          </li>
+          <li>
+            Fix typo in logging for commander parseConfigFile
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2352">
+              #2352
+            </a>
+            (
+            <a href="https://github.com/AndrewLane">
+              AndrewLane
+            </a>
+            )
+          </li>
+          <li>
+            Fix minor typos in test names
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2351">
+              #2351
+            </a>
+            (
+            <a href="https://github.com/acinader">
+              acinader
+            </a>
+            )
+          </li>
+          <li>
+            Makes sure we don’t strip authData or session token from users using masterKey
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2348">
+              #2348
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Run coverage with istanbul
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2340">
+              #2340
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Run next() after successfully sending data to the client
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2338">
+              #2338
+            </a>
+            (
+            <a href="https://github.com/blacha">
+              blacha
+            </a>
+            )
+          </li>
+          <li>
+            Cache all the mongodb/version folder
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2336">
+              #2336
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            updates usage of setting: emailVerifyTokenValidityDuration
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2331">
+              #2331
+            </a>
+            (
+            <a href="https://github.com/cherukumilli">
+              cherukumilli
+            </a>
+            )
+          </li>
+          <li>
+            Update Mongodb client to 2.2.4
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2329">
+              #2329
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Allow usage of analytics adapter
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2327">
+              #2327
+            </a>
+            (
+            <a href="https://github.com/deashay">
+              deashay
+            </a>
+            )
+          </li>
+          <li>
+            Fix flaky tests
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2324">
+              #2324
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            don’t serve null authData values
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2320">
+              #2320
+            </a>
+            (
+            <a href="https://github.com/yuzeh">
+              yuzeh
+            </a>
+            )
+          </li>
+          <li>
+            Fix null relation problem
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2319">
+              #2319
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Clear the connectionPromise upon close or error
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2314">
+              #2314
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Report validation errors with correct error code
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2299">
+              #2299
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Parses correctly Parse.Files and Dates when sent to Cloud Code Functions
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2297">
+              #2297
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Adding proper generic Not Implemented.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2292">
+              #2292
+            </a>
+            (
+            <a href="https://github.com/vitaly-t">
+              vitaly-t
+            </a>
+            )
+          </li>
+          <li>
+            Adds schema caching capabilities (5s by default)
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2286">
+              #2286
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            add digits oauth provider
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2284">
+              #2284
+            </a>
+            (
+            <a href="https://github.com/ranhsd">
+              ranhsd
+            </a>
+            )
+          </li>
+          <li>
+            Improve installations query
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2281">
+              #2281
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Adding request headers to cloud functions fixes #1461
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2274">
+              #2274
+            </a>
+            (
+            <a href="https://github.com/blacha">
+              blacha
+            </a>
+            )
+          </li>
+          <li>
+            Creates a new sessionToken when updating password
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2266">
+              #2266
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Add Gitter chat link to the README.
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2264">
+              #2264
+            </a>
+            (
+            <a href="https://github.com/nlutsenko">
+              nlutsenko
+            </a>
+            )
+          </li>
+          <li>
+            Restores ability to include non pointer keys
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2263">
+              #2263
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Allow next middleware handle error in handleParseErrors
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2260">
+              #2260
+            </a>
+            (
+            <a href="https://github.com/mejcz">
+              mejcz
+            </a>
+            )
+          </li>
+          <li>
+            Exposes the ClientSDK infos if available
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2259">
+              #2259
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            Adds support for multiple twitter auths options
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2256">
+              #2256
+            </a>
+            (
+            <a href="https://github.com/flovilmart">
+              flovilmart
+            </a>
+            )
+          </li>
+          <li>
+            validate_purchase fix for SANDBOX requests
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2253">
+              #2253
+            </a>
+            (
+            <a href="https://github.com/valeryvaskabovich">
+              valeryvaskabovich
+            </a>
+            )
+          </li>
+        </ul>
         <h3>
           2.2.16 (7/10/2016)
         </h3>
