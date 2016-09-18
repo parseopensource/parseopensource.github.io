@@ -90,7 +90,7 @@
         </p>
         <ul class="download-ul">
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.18.zip">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.21.zip">
               Download
               <strong>
                 ZIP File
@@ -98,7 +98,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.18.tar.gz">
+            <a href="https://github.com/ParsePlatform/parse-server/archive/2.2.21.tar.gz">
               Download
               <strong>
                 TAR Ball
@@ -124,7 +124,191 @@
         <h2>
           Parse Server Changelog
         </h2>
-        <h3>2.2.18</h3>
+        <h3>
+          2.2.21
+        </h3>
+        <ul>
+          <li>
+            Fix: Reverts removal of babel-polyfill
+          </li>
+        </ul>
+        <h3>
+          2.2.20
+        </h3>
+        <ul>
+          <li>
+            New: Adds CloudCode handler for
+            <code>
+              beforeFind
+            </code>
+            , thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            New: RedisCacheAdapter for syncing schema, role and user caches across servers, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            New: Latest master build available at
+            <code>
+              ParsePlatform/parse-server#latest
+            </code>
+            , thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Better support for upgradeToRevocableSession with missing session token, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Removes babel-polyfill runtime dependency, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Cluster option now support a boolean value for automatically choosing the right number of processes, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Filenames now appear correctly, thanks to
+            <a href="https://github.com/lama-buddy">
+              Lama Chandrasena
+            </a>
+          </li>
+          <li>
+            Fix:
+            <code>
+              _acl
+            </code>
+            is properly updated, thanks to
+            <a href="https://github.com/steven-supersolid">
+              Steven Shipton
+            </a>
+          </li>
+        </ul>
+        <p>
+          Other fixes by
+          <a href="https://github.com/mathiasrw">
+            Mathias Rangel Wulff
+          </a>
+        </p>
+        <h3>
+          2.2.19
+        </h3>
+        <ul>
+          <li>
+            New: support for upgrading to revocable sessions, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            New: NullCacheAdapter for disabling caching, thanks to
+            <a href="https://github.com/yuki-takeichi">
+              Yuki Takeichi
+            </a>
+          </li>
+          <li>
+            New: Account lockout policy
+            <a href="https://github.com/ParsePlatform/parse-server/pull/2601">
+              #2601
+            </a>
+            , thanks to
+            <a href="https://github.com/cherukumilli">
+              Diwakar Cherukumilli
+            </a>
+          </li>
+          <li>
+            New: Jobs endpoint for defining and run jobs (no scheduling), thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            New: Add --cluster option to the CLI, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            New: Support for login with
+            <a href="http://vk.com">
+              vk.com
+            </a>
+            , thanks to
+            <a href="https://github.com/nbolatov">
+              Nurdaulet Bolatov
+            </a>
+          </li>
+          <li>
+            New: experimental support for postgres databases, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: parse-server doesn’t call next() after successful responses, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Nested objects are properly includeed with Pointer Permissions on, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: null values in include calls are properly handled, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Schema validations now runs after beforeSave hooks, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: usersname and passwords are properly type checked, thanks to
+            <a href="https://github.com/bamwang">
+              Bam Wang
+            </a>
+          </li>
+          <li>
+            Fix: logging in info log would log also in error log, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: removes extaneous logging from ParseLiveQueryServer, thanks to
+            <a href="https://github.com/flavionegrao">
+              Flavio Torres
+            </a>
+          </li>
+          <li>
+            Fix: support for Range requests for files, thanks to
+            <a href="https://github.com/Bragegs">
+              Brage G. Staven
+            </a>
+          </li>
+        </ul>
+        <h3>
+          2.2.18
+        </h3>
         <ul>
           <li>
             Fix: Improve support for objects in push alert, thanks to
@@ -191,7 +375,9 @@
             </a>
           </li>
         </ul>
-        <h3>2.2.17 (07/23/2016)</h3>
+        <h3>
+          2.2.17 (07/23/2016)
+        </h3>
         <p>
           <a href="https://github.com/ParsePlatform/parse-server/compare/2.2.16...2.2.17">
             Full Changelog
