@@ -125,6 +125,88 @@
           Parse Server Changelog
         </h2>
         <h3>
+          2.2.22
+        </h3>
+        <ul>
+          <li>
+            Minimum nodejs engine is now 4.5
+          </li>
+        </ul>
+        <h4>
+          New Features
+        </h4>
+        <ul>
+          <li>
+            New: CLI for parse-live-query-server, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            New: Start parse-live-query-server for parse-server CLI, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+        </ul>
+        <h4>
+          Bug fixes
+        </h4>
+        <ul>
+          <li>
+            Fix: Include with pointers are not conflicting with get CLP anymore, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Removes dependency on babel-polyfill, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Support nested select calls, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Use native column selection instead of runtime, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: installationId header is properly used when updating
+            <code>
+              _Installation
+            </code>
+            objects, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: don’t crash parse-server on improperly formatted live-query messages, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+          <li>
+            Fix: Passwords are properly stripped out of logs, thanks to
+            <a href="https://github.com/acinader">
+              Arthur Cinader
+            </a>
+          </li>
+          <li>
+            Fix: Lookup for email in username if email is not set, thanks to
+            <a href="https://github.com/flovilmart">
+              Florent Vilmart
+            </a>
+          </li>
+        </ul>
+        <h3>
           2.2.21
         </h3>
         <ul>
