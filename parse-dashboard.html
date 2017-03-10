@@ -1,461 +1,505 @@
 <!DOCTYPE doctype html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="chrome=1" http-equiv="X-UA-Compatible" />
     <title>
-      Parse Open Source Community
+        Parse Open Source Community
     </title>
-    <link href="css/styles.css" rel="stylesheet"/>
-    <link href="css/pygment_trac.css" rel="stylesheet"/>
-    <meta content="width=device-width" name="viewport"/>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/pygment_trac.css" rel="stylesheet" />
+    <meta content="width=device-width" name="viewport" />
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
       </script>
     <![endif]-->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-73728444-3', 'auto');
-      ga('send', 'pageview');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-73728444-3', 'auto');
+    ga('send', 'pageview');
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="top-navi">
-      <div class="wrapper">
-        <ul class="navi">
-          <li>
-            <a href="./index.html">
+        <div class="wrapper">
+            <ul class="navi">
+                <li>
+                    <a href="./index.html">
               Useful Resources
             </a>
-          </li>
-          <li>
-            <a href="./parse-server.html">
+                </li>
+                <li>
+                    <a href="./parse-server.html">
               Parse Server
             </a>
-          </li>
-          <li>
-            <a class="current" href="./parse-dashboard.html">
+                </li>
+                <li>
+                    <a class="current" href="./parse-dashboard.html">
               Parse Dashboard
             </a>
-          </li>
-        </ul>
-      </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="wrapper">
-      <header>
-        <a class="logo" href="./index.html">
-          <img alt="Parse Open Source Community" src="img/parseopensource-logo.png" width="100"/>
-        </a>
-      </header>
-      <section>
-        <p class="project-info">
-          <a href="https://github.com/ParsePlatform/parse-server">
+        <header>
+            <a class="logo" href="./index.html">
+                <img alt="Parse Open Source Community" src="img/parseopensource-logo.png" width="100" />
+            </a>
+        </header>
+        <section>
+            <p class="project-info">
+                <a href="https://github.com/ParsePlatform/parse-server">
             View the Parse Dashboard Project on GitHub
             <small>
               ParsePlatform/parse-dashboard
             </small>
           </a>
-        </p>
-        <ul class="download-ul">
-          <li>
-            <a href="https://github.com/ParsePlatform/parse-dashboard/archive/1.0.19.zip">
+            </p>
+            <ul class="download-ul">
+                <li>
+                    <a href="https://github.com/ParsePlatform/parse-dashboard/archive/1.0.25.zip">
               Download
               <strong>
                 ZIP File
               </strong>
             </a>
-          </li>
-          <li>
-            <a href="https://github.com/ParsePlatform/parse-dashboard/archive/1.0.19.tar.gz">
+                </li>
+                <li>
+                    <a href="https://github.com/ParsePlatform/parse-dashboard/archive/1.0.25.tar.gz">
               Download
               <strong>
                 TAR Ball
               </strong>
             </a>
-          </li>
-          <li>
-            <a href="https://github.com/ParsePlatform/parse-dashboard">
+                </li>
+                <li>
+                    <a href="https://github.com/ParsePlatform/parse-dashboard">
               Fork On
               <strong>
                 GitHub
               </strong>
             </a>
-          </li>
-          <li class="npm">
-            <a href="https://www.npmjs.com/package/parse-dashboard">
-              <img alt="npm" src="https://img.shields.io/npm/v/parse-dashboard.svg?style=flat"/>
-            </a>
-          </li>
-        </ul>
-        <div class="hr">
-        </div>
-        <h2>
+                </li>
+                <li class="npm">
+                    <a href="https://www.npmjs.com/package/parse-dashboard">
+                        <img alt="npm" src="https://img.shields.io/npm/v/parse-dashboard.svg?style=flat" />
+                    </a>
+                </li>
+            </ul>
+            <div class="hr">
+            </div>
+            <h2>
           Parse Dashboard Changelog
         </h2>
-        <h3>
+            <h3>NEXT RELEASE</h3>
+            <ul>
+                <li><em>Contributing to this repo? Add info about your change here to be included in next release</em></li>
+            </ul>
+            <h3>1.0.25</h3>
+            <ul>
+                <li>Improvement: Update and add links to sidebar footer (#661), thanks to <a href="https://github.com/natanrolnik">Natan Rolnik</a></li>
+                <li>Fix: Don’t call unsupported endpoints in Parse Server (#660), thanks to <a href="https://github.com/natanrolnik">Natan Rolnik</a></li>
+                <li>Fix: Display correctly Files and GeoPoints in Config (#666), thanks to <a href="https://github.com/natanrolnik">Natan Rolnik</a></li>
+            </ul>
+            <h3>1.0.24</h3>
+            <ul>
+                <li>Improvement: Data browser updates object count when table is filtered (#652), thanks to <a href="https://github.com/rizzomichaelg">Mike Rizzo</a></li>
+                <li>Improvement: Apps name sorting by name (#654), thanks to <a href="https://github.com/scthi">Thilo Schmalfuß</a></li>
+                <li>Fix: Fetch jobs list not showing (#656), thanks to <a href="https://github.com/natanrolnik">Natan Rolnik</a></li>
+            </ul>
+            <h3>1.0.23</h3>
+            <ul>
+                <li>Improvement: Enabling web hooks (#584), thanks to <a href="https://github.com/davimacedo">Antonio Davi Macedo Coelho de Castro</a></li>
+                <li>Improvement: Set autofocus on the username input field (#644), thanks to <a href="https://github.com/hermanliang">Herman Liang</a></li>
+                <li>Fix: Browser won’t render class table with field that contains an object (#623), thanks to <a href="https://github.com/jordanhaven">Jordan Haven</a></li>
+                <li>Fix: Config FETCH results in 401 (#575), thanks to <a href="https://github.com/brndmg">Matt Simms</a></li>
+            </ul>
+            <h3>1.0.22</h3>
+            <ul>
+                <li>Fix issue affecting logging screen with encrypted passwords, thanks to <a href="https://github.com/lsohn">lsohn</a></li>
+            </ul>
+            <h3>1.0.21</h3>
+            <ul>
+                <li>Fix: Use mountPath for all log in and log out redirects</li>
+            </ul>
+            <h3>1.0.20</h3>
+            <ul>
+                <li>New: Form based login page instead of basic auth (#562), thanks to <a href="https://github.com/JeremyPlease">Jeremy Louie</a></li>
+                <li>Fix: Can’t send push to specific user (#570), thanks to <a href="https://github.com/dvanwinkle">Dan VanWinkle</a></li>
+                <li>Fix: Download link in footer menu (#567), thanks to <a href="https://github.com/pivanov">Pavel Ivanov</a></li>
+            </ul>
+            <h3>
           1.0.19
         </h3>
-        <ul>
-          <li>
-            New: Support for trusting proxies w/ HTTPS
-          </li>
-          <li>
-            New: Support for filtering string with
-            <code>
+            <ul>
+                <li>
+                    New: Support for trusting proxies w/ HTTPS
+                </li>
+                <li>
+                    New: Support for filtering string with
+                    <code>
               ends with
             </code>
-          </li>
-          <li>
-            New: View parse-server based jobs
-          </li>
-          <li>
-            New: Button to add rows from browser toolbar
-          </li>
-          <li>
-            New: Support for encrypted passwords
-          </li>
-          <li>
-            New: Support for sorting by
-            <code>
+                </li>
+                <li>
+                    New: View parse-server based jobs
+                </li>
+                <li>
+                    New: Button to add rows from browser toolbar
+                </li>
+                <li>
+                    New: Support for encrypted passwords
+                </li>
+                <li>
+                    New: Support for sorting by
+                    <code>
               createdAt
             </code>
-          </li>
-          <li>
-            Improvement: Push audiences support
-          </li>
-          <li>
-            Fix: Calendar dates support
-          </li>
-        </ul>
-        <h3>
+                </li>
+                <li>
+                    Improvement: Push audiences support
+                </li>
+                <li>
+                    Fix: Calendar dates support
+                </li>
+            </ul>
+            <h3>
           1.0.18
         </h3>
-        <ul>
-          <li>
-            Fix: Revert history change that was causing issues when mounting on express
-          </li>
-        </ul>
-        <h3>
+            <ul>
+                <li>
+                    Fix: Revert history change that was causing issues when mounting on express
+                </li>
+            </ul>
+            <h3>
           1.0.17
         </h3>
-        <ul>
-          <li>
-            Fix: Revert mount path change that was causing issues when mounting on express
-          </li>
-        </ul>
-        <h3>
+            <ul>
+                <li>
+                    Fix: Revert mount path change that was causing issues when mounting on express
+                </li>
+            </ul>
+            <h3>
           1.0.16
         </h3>
-        <ul>
-          <li>
-            New: Add options to add selected rows to a relation, thanks to
-            <a href="https://github.com/Beingbook">
+            <ul>
+                <li>
+                    New: Add options to add selected rows to a relation, thanks to
+                    <a href="https://github.com/Beingbook">
               Han BaHwan
             </a>
-          </li>
-          <li>
-            New: Add ability to use bcrypted passwords, thanks to
-            <a href="https://github.com/dvanwinkle">
+                </li>
+                <li>
+                    New: Add ability to use bcrypted passwords, thanks to
+                    <a href="https://github.com/dvanwinkle">
               Dan VanWinkle
             </a>
-          </li>
-          <li>
-            Fix: Fix deletion of columns, thanks to
-            <a href="https://github.com/brheal">
+                </li>
+                <li>
+                    Fix: Fix deletion of columns, thanks to
+                    <a href="https://github.com/brheal">
               Bryan Rhea
             </a>
-          </li>
-        </ul>
-        <h3>
+                </li>
+            </ul>
+            <h3>
           1.0.15
         </h3>
-        <ul>
-          <li>
-            New: Add ability to delete all rows in a class, thanks to
-            <a href="https://github.com/Marco129">
+            <ul>
+                <li>
+                    New: Add ability to delete all rows in a class, thanks to
+                    <a href="https://github.com/Marco129">
               Marco Cheung
             </a>
-          </li>
-          <li>
-            New: Add relation editor, thanks to
-            <a href="https://github.com/Beingbook">
+                </li>
+                <li>
+                    New: Add relation editor, thanks to
+                    <a href="https://github.com/Beingbook">
               Han BaHwan
             </a>
-          </li>
-          <li>
-            Fix: Bug when alert is missing in payload, thanks to
-            <a href="https://github.com/hermanliang">
+                </li>
+                <li>
+                    Fix: Bug when alert is missing in payload, thanks to
+                    <a href="https://github.com/hermanliang">
               Herman Liang
             </a>
-          </li>
-          <li>
-            Fix: Improve target display in Push viewer, thanks to
-            <a href="https://github.com/hermanliang">
+                </li>
+                <li>
+                    Fix: Improve target display in Push viewer, thanks to
+                    <a href="https://github.com/hermanliang">
               Herman Liang
             </a>
-          </li>
-          <li>
-            Fix: Open docs and other sidebar links in new tab, thanks to
-            <a href="https://github.com/kwstasna">
+                </li>
+                <li>
+                    Fix: Open docs and other sidebar links in new tab, thanks to
+                    <a href="https://github.com/kwstasna">
               Konstantinos N.
             </a>
-          </li>
-        </ul>
-        <h3>
+                </li>
+            </ul>
+            <h3>
           1.0.14
         </h3>
-        <ul>
-          <li>
-            Fix bug in past push page
-          </li>
-        </ul>
-        <h3>
+            <ul>
+                <li>
+                    Fix bug in past push page
+                </li>
+            </ul>
+            <h3>
           1.0.13
         </h3>
-        <ul>
-          <li>
-            Fix log retrieval, thanks to
-            <a href="https://github.com/poltib">
+            <ul>
+                <li>
+                    Fix log retrieval, thanks to
+                    <a href="https://github.com/poltib">
               Jérémy Thiry
             </a>
-          </li>
-          <li>
-            Improved GeoPoint editor and ESC button in editors, thanks to
-            <a href="https://github.com/samschooler">
+                </li>
+                <li>
+                    Improved GeoPoint editor and ESC button in editors, thanks to
+                    <a href="https://github.com/samschooler">
               Sam Schooler
             </a>
-          </li>
-          <li>
-            Add push status page to dashboard, thanks to
-            <a href="https://github.com/JeremyPlease">
+                </li>
+                <li>
+                    Add push status page to dashboard, thanks to
+                    <a href="https://github.com/JeremyPlease">
               Jeremy Pease
             </a>
-          </li>
-        </ul>
-        <h3>
+                </li>
+            </ul>
+            <h3>
           1.0.12
         </h3>
-        <ul>
-          <li>
-            Fix minor style issues
-          </li>
-          <li>
-            Add pointer permissions editor
-          </li>
-          <li>
-            Allow cancellation of edits in data browser using ESC key, thanks to
-            <a href="https://github.com/mtrezza">
+            <ul>
+                <li>
+                    Fix minor style issues
+                </li>
+                <li>
+                    Add pointer permissions editor
+                </li>
+                <li>
+                    Allow cancellation of edits in data browser using ESC key, thanks to
+                    <a href="https://github.com/mtrezza">
               Manuel
             </a>
-          </li>
-          <li>
-            Show error messages in the console when your app’s icons can’t be found, thanks to
-            <a href="https://github.com/deada92">
+                </li>
+                <li>
+                    Show error messages in the console when your app’s icons can’t be found, thanks to
+                    <a href="https://github.com/deada92">
               Saif Al-Dilaimi
             </a>
-          </li>
-        </ul>
-        <h3>
+                </li>
+            </ul>
+            <h3>
           1.0.11
         </h3>
-        <ul>
-          <li>
-            Add the ability to specify SSL cert and key, thanks to
-            <a href="https://github.com/Vortec4800">
+            <ul>
+                <li>
+                    Add the ability to specify SSL cert and key, thanks to
+                    <a href="https://github.com/Vortec4800">
               Cory Imdieke
             </a>
-          </li>
-          <li>
-            Trust proxy when enabling --allowInsecureHTTP, thanks to
-            <a href="https://github.com/yongjhih">
+                </li>
+                <li>
+                    Trust proxy when enabling --allowInsecureHTTP, thanks to
+                    <a href="https://github.com/yongjhih">
               Andrew Chen
             </a>
-          </li>
-          <li>
-            Fix App index when apps have an apostrophe in the name
-          </li>
-          <li>
-            Fix display of prod/dev flag
-          </li>
-          <li>
-            Support for Node 6
-          </li>
-        </ul>
-        <h3>
+                </li>
+                <li>
+                    Fix App index when apps have an apostrophe in the name
+                </li>
+                <li>
+                    Fix display of prod/dev flag
+                </li>
+                <li>
+                    Support for Node 6
+                </li>
+            </ul>
+            <h3>
           1.0.10
         </h3>
-        <ul>
-          <li>
-            Add the ability to specify icons for your app, thanks to
-            <a href="https://github.com/natanrolnik">
+            <ul>
+                <li>
+                    Add the ability to specify icons for your app, thanks to
+                    <a href="https://github.com/natanrolnik">
               Natan Rolnik
             </a>
-          </li>
-          <li>
-            Fix sending push with JSON data
-          </li>
-        </ul>
-        <h3>
+                </li>
+                <li>
+                    Fix sending push with JSON data
+                </li>
+            </ul>
+            <h3>
           1.0.9
         </h3>
-        <ul>
-          <li>
-            Add the ability to mount the dashboard express app on a custom mount path, thanks to
-            <a href="https://github.com/hpello">
+            <ul>
+                <li>
+                    Add the ability to mount the dashboard express app on a custom mount path, thanks to
+                    <a href="https://github.com/hpello">
               hpello
-            </a>
-            with bugfixes from
-            <a href="https://github.com/mamaso">
+            </a> with bugfixes from
+                    <a href="https://github.com/mamaso">
               mamaso
             </a>
-          </li>
-          <li>
-            Add ability to restrict certain users to certain apps, thanks to
-            <a href="https://github.com/felipemobile">
+                </li>
+                <li>
+                    Add ability to restrict certain users to certain apps, thanks to
+                    <a href="https://github.com/felipemobile">
               Felipe Andrade
             </a>
-          </li>
-          <li>
-            Fix Dockerfile, thanks to
-            <a href="https://github.com/kkc">
+                </li>
+                <li>
+                    Fix Dockerfile, thanks to
+                    <a href="https://github.com/kkc">
               Kakashi Liu
             </a>
-          </li>
-          <li>
-            Display Parse Dashboard version, thanks to
-            <a href="https://github.com/xeoneux">
+                </li>
+                <li>
+                    Display Parse Dashboard version, thanks to
+                    <a href="https://github.com/xeoneux">
               Aayush Kapoor
-            </a>
-            and
-            <a href="https://github.com/gateway">
+            </a> and
+                    <a href="https://github.com/gateway">
               gateway
             </a>
-          </li>
-          <li>
-            Add a refresh button to the data browser, thanks to
-            <a href="https://github.com/TylerBrock">
+                </li>
+                <li>
+                    Add a refresh button to the data browser, thanks to
+                    <a href="https://github.com/TylerBrock">
               TylerBrock
             </a>
-          </li>
-          <li>
-            Add logs viewer
-          </li>
-          <li>
-            Misc. performance improvements and bugfixes, thanks to
-            <a href="https://github.com/pivanov">
+                </li>
+                <li>
+                    Add logs viewer
+                </li>
+                <li>
+                    Misc. performance improvements and bugfixes, thanks to
+                    <a href="https://github.com/pivanov">
               Pavel Ivanov
             </a>
-          </li>
-        </ul>
-        <h3>
+                </li>
+            </ul>
+            <h3>
           1.0.8
         </h3>
-        <ul>
-          <li>
-            Allow Dashboard to be mounted as Express middleware, thanks to
-            <a href="https://github.com/flovilmart">
+            <ul>
+                <li>
+                    Allow Dashboard to be mounted as Express middleware, thanks to
+                    <a href="https://github.com/flovilmart">
               Florent Vilmart
             </a>
-          </li>
-          <li>
-            Add an option to specify that your app is in production, thanks to
-            <a href="https://github.com/dcdspace">
+                </li>
+                <li>
+                    Add an option to specify that your app is in production, thanks to
+                    <a href="https://github.com/dcdspace">
               Dylan Diamond
             </a>
-          </li>
-          <li>
-            Fix GeoPoints in Parse Config, thanks to
-            <a href="https://github.com/dcdspace">
+                </li>
+                <li>
+                    Fix GeoPoints in Parse Config, thanks to
+                    <a href="https://github.com/dcdspace">
               Dylan Diamond
             </a>
-          </li>
-          <li>
-            Allow specification of the host the dashboard runs on, thanks to
-            <a href="https://github.com/hpello">
+                </li>
+                <li>
+                    Allow specification of the host the dashboard runs on, thanks to
+                    <a href="https://github.com/hpello">
               hpello
             </a>
-          </li>
-          <li>
-            Miscellaneous look-and-feel improvements
-          </li>
-        </ul>
-        <h3>
+                </li>
+                <li>
+                    Miscellaneous look-and-feel improvements
+                </li>
+            </ul>
+            <h3>
           1.0.7
         </h3>
-        <ul>
-          <li>
-            Fix sending pushes with badge increment
-          </li>
-        </ul>
-        <h3>
+            <ul>
+                <li>
+                    Fix sending pushes with badge increment
+                </li>
+            </ul>
+            <h3>
           1.0.6
         </h3>
-        <ul>
-          <li>
-            Send push notifications from the dashboard
-          </li>
-          <li>
-            Add object count to relation browser, thanks to
-            <a href="https://github.com/gavrix">
+            <ul>
+                <li>
+                    Send push notifications from the dashboard
+                </li>
+                <li>
+                    Add object count to relation browser, thanks to
+                    <a href="https://github.com/gavrix">
               Sergey Gavrilyuk
             </a>
-          </li>
-        </ul>
-        <h3>
+                </li>
+            </ul>
+            <h3>
           1.0.5
         </h3>
-        <ul>
-          <li>
-            Fix new features notification
-          </li>
-        </ul>
-        <h3>
+            <ul>
+                <li>
+                    Fix new features notification
+                </li>
+            </ul>
+            <h3>
           1.0.4
         </h3>
-        <ul>
-          <li>
-            Class level permissions editor
-          </li>
-        </ul>
-      </section>
-      <footer>
-        <br/>
-        <h4>
+            <ul>
+                <li>
+                    Class level permissions editor
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <br/>
+            <h4>
           Join the Community on Slack.
         </h4>
-        <a href="https://parse-opensource.sapp.io" title="Parse Open Source Community on Slack">
-          <img src="https://parse-opensource.sapp.io/img/parseopensource.svg" alt="Parse Open Source Community on Slack"/>
-        </a>
-        <br/>
-        <br/>
-        <h4>
+            <a href="https://parse-opensource.sapp.io" title="Parse Open Source Community on Slack">
+                <img src="https://parse-opensource.sapp.io/img/parseopensource.svg" alt="Parse Open Source Community on Slack" />
+            </a>
+            <br/>
+            <br/>
+            <h4>
           Join in our Facebook Group
         </h4>
-        <a href="https://www.facebook.com/groups/1112342468842397/" title="Parse Open Source Community on Facebook">
-          <img src="//parseopensource.github.io/img/parseopensource-facebook-group.jpg" alt="Parse Open Source Community on Facebook"/>
-        </a>
-        <p class="footer-links">
-          <small>
+            <a href="https://www.facebook.com/groups/1112342468842397/" title="Parse Open Source Community on Facebook">
+                <img src="//parseopensource.github.io/img/parseopensource-facebook-group.jpg" alt="Parse Open Source Community on Facebook" />
+            </a>
+            <p class="footer-links">
+                <small>
             Follow us on Twitter
             <a href="http://bit.ly/1Uy4YCt">
               @parseopensource
             </a>
           </small>
-          <br/>
-          <br/>
-          <small>
+                <br/>
+                <br/>
+                <small>
             This website is maintained by
             <br/>
             <a href="http://github.com/parseopensource">
               Parse Open Source Community
             </a>
           </small>
-          <br/>
-          <br/>
-          <small>
+                <br/>
+                <br/>
+                <small>
             Hosted on GitHub Pages
             <br/>
             Theme by
@@ -463,8 +507,9 @@
               orderedlist
             </a>
           </small>
-        </p>
-      </footer>
+            </p>
+        </footer>
     </div>
-  </body>
+</body>
+
 </html>
